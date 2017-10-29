@@ -1,0 +1,20 @@
+<h5>Login</h5>
+
+<div >
+    <div >
+      <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="validate">
+      <label for="usuario">Usuário</label>
+    </div>
+</div>
+
+<div>
+    <div>
+      <input [(ngModel)]="usuario.senha" id="senha" type="password" class="validate">
+      <label for="senha">Senha</label>
+    </div>
+</div>
+
+<button 
+    type="submit" name="action" (click)="fazerLogin()">
+    Login
+  </button>
